@@ -21,3 +21,8 @@ passmanager.py
 
 ### add new password
 ![Programmer and Problems solver](https://raw.githubusercontent.com/hamza07-w/passwdmanager/main/ex2.png)
+
+
+
+### generate new password
+![Programmer and Problems solver](https://raw.githubusercontent.com/hamza07-w/passwdmanager/main/ex3.png)
