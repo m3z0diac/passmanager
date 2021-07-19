@@ -4,13 +4,14 @@ import time
 
 
 
+
 '''
 Hamza Elansari HK-GANG
 '''
 head = '''
                                       by Hamza07-w
-                        .:'         passwords manager            `:.
-                        ::'                                      `::
+                        .:'         Tool :passwords manager     `:.
+                        ::'Contact Me hamzaelansari453@gmail.com `::
                         :: :.                                  .: ::
                          `:. `:.             .             .:'  .:'
                           `::. `::           !           ::' .::'
@@ -135,7 +136,7 @@ def showpass():
 	cr.execute("select website, passwd from passmanager")
 	data = cr.fetchall()
 	msg = """
-	showu selected wbsite password = [1]
+	show selected wbsite password = [1]
 	show all websites passwords    = [2]
 	"""
 	select = input(msg)
