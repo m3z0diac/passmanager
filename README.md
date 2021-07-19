@@ -18,3 +18,6 @@ or
 passmanager.py
 ```
 ![Programmer and Problems solver](https://raw.githubusercontent.com/hamza07-w/passwdmanager/main/exmpl.jpg)
+
+### add new password
+![Programmer and Problems solver](https://raw.githubusercontent.com/hamza07-w/passwdmanager/main/ex2.jpg)
