@@ -60,7 +60,7 @@ def input_usr():
 	if usr_input in optins:
 		return usr_input
 	else:
-		exit()
+		pass
 
 def saveChanges():
 	passdb.commit()
@@ -146,7 +146,14 @@ def showpass():
 			try:
 				er_msg = ""
 				if el[0] == site_name:
-					print("website and password found ==>  " + el[1])
+					table = f"""
+					------------------------------
+					|   website    |   password  |
+					------------------------------
+						{site_name}  ==>  {el[1]}     
+					------------------------------
+					"""
+					print(table)
 				else:
 					time.sleep(1)
 					print("checking database\n")
@@ -158,14 +165,14 @@ def showpass():
 
 	elif select == "2":
 		for el in data:
-			print(el[0] + " : " + el[1])
+			print(el[0] + "	  ==>  " + el[1])
 
 def savefill():
 	res = """ """
 	cr.execute("select website, passwd from passmanager")
 	data = cr.fetchall()
 	for el in data:
-		res += el[0] + " : " + el[1] + "\n"
+		res += el[0] + " : " + el[1]
 
 	with open("passwords.txt", 'w') as file:
 		file.write(res)
